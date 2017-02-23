@@ -1,0 +1,391 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jappointment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20160324\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-27 01:10+0000\n"
+"PO-Revision-Date: 2016-08-26 23:00-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: es_CO\n"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "00"
+msgstr "00"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "05"
+msgstr "05"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "1 PM"
+msgstr "1 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "10"
+msgstr "10"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "10 AM"
+msgstr "10 AM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "11 AM"
+msgstr "11 AM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "12 M"
+msgstr "12 M"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "15"
+msgstr "15"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "2 PM"
+msgstr "2 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "20"
+msgstr "20"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "25"
+msgstr "25"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "3 PM"
+msgstr "3 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "30"
+msgstr "30"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "35"
+msgstr "35"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "4 PM"
+msgstr "4 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "40"
+msgstr "40"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "45"
+msgstr "45"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "5 PM"
+msgstr "5 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "50"
+msgstr "50"
+
+#. module: jappointment
+#: selection:medical.appointment,minutes:0
+msgid "55"
+msgstr "55"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "6 AM"
+msgstr "6 AM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "6 PM"
+msgstr "6 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "7 AM"
+msgstr "7 AM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "7 PM"
+msgstr "7 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "8 AM"
+msgstr "8 AM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "8 PM"
+msgstr "8 PM"
+
+#. module: jappointment
+#: selection:medical.appointment,hours:0
+msgid "9 AM"
+msgstr "9 AM"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:254
+#, python-format
+msgid "Agenda ya ha sido generada previamente..."
+msgstr "Agenda ya ha sido generada previamente..."
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,appointment_ids:0
+msgid "Apointments"
+msgstr "Citas"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,appointment_date:0
+msgid "Appointment Date"
+msgstr "Fecha Cita"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,step:0
+msgid "Appointment Interval"
+msgstr "Intervalo (Minutos)"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,appointment_quota:0
+msgid "Appointment Quota"
+msgstr "Cupo de Citas"
+
+#. module: jappointment
+#: view:medical.appointment:jappointment.medical_appointment_view_form_inh2
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_form
+msgid "Citas"
+msgstr "Citas"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_tree
+msgid "Citas Asignadas"
+msgstr "Citas Asignadas"
+
+#. module: jappointment
+#: view:medical.appointment:jappointment.medical_appointment_view_form_inh2
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+msgid "Creation Month"
+msgstr "Mes de Creación"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_tree
+msgid "Cupo Disponible"
+msgstr "Cupo Disponible"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,date:0
+#: field:medical.physician.schedule.template,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,date_string:0
+msgid "Date String"
+msgstr "Fecha en Letras"
+
+#. module: jappointment
+#: view:medical.appointment:jappointment.medical_appointment_view_form_inh2
+msgid "Done"
+msgstr "Realizado"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,appointment_date_end:0
+msgid "End Appointment Date"
+msgstr "Fecha Final"
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:261
+#, python-format
+msgid "Fecha de inicio mayor o igual que la fecha final..."
+msgstr "Fecha de inicio mayor o igual que la fecha final..."
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:259
+#, python-format
+msgid "Fecha no valida..."
+msgstr "Fecha no valida..."
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: jappointment
+#: field:medical.appointment,hours:0
+#: field:medical.appointment.schedule.time,hours:0
+msgid "Hours"
+msgstr "Horas"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,is_free:0
+msgid "Is Free?"
+msgstr "Está Disponible?"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,is_over_quota:0
+msgid "Is Over Quota"
+msgstr "Cupo Excedido?"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_form
+msgid "Medical Patient Evaluation"
+msgstr "Evaluación Médica"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_tree
+msgid "Medical Physician Schedule"
+msgstr "Agenda del Médico"
+
+#. module: jappointment
+#: field:medical.appointment,minutes:0
+#: field:medical.appointment.schedule.time,minutes:0
+msgid "Minutes"
+msgstr "Minutos"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+msgid "Month"
+msgstr "Mes"
+
+#. module: jappointment
+#: field:medical.appointment.schedule.time,name:0
+#: field:medical.physician.schedule.template,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: jappointment
+#: field:medical.physician.schedule.template,appointment_date:0
+msgid "Next Appointment Date"
+msgstr "Fecha Cita"
+
+#. module: jappointment
+#: field:medical.appointment,patient_turn:0
+msgid "Patient Turn"
+msgstr "Turno Paciente"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+msgid "Physician"
+msgstr "Médico"
+
+#. module: jappointment
+#: model:ir.actions.act_window,name:jappointment.medical_physician_schedule_template_action
+#: model:ir.ui.menu,name:jappointment.medical_physician_schedule_template_menu
+#: field:medical.appointment.schedule.time,physician_schedule_id:0
+msgid "Physician Schedule"
+msgstr "Agenda del Médico"
+
+#. module: jappointment
+#: field:medical.appointment,physician_schedule_id:0
+msgid "Physician schedule id"
+msgstr "ID Agenda del Médico"
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:289
+#, python-format
+msgid "Quota Available"
+msgstr "Cupo Disponible"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_form
+msgid "Schedule"
+msgstr "Crear Horarios"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_form
+msgid "Schedule Setup"
+msgstr "Configuración de Agenda"
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:288
+#, python-format
+msgid "Scheduled Appointments"
+msgstr "No. de Citas Agendadas"
+
+#. module: jappointment
+#: view:medical.physician.schedule.template:jappointment.medical_physician_schedule_template_search
+#: field:medical.physician.schedule.template,specialty_id:0
+msgid "Specialty"
+msgstr "Especialidad"
+
+#. module: jappointment
+#: help:medical.physician.schedule.template,specialty_id:0
+msgid "Specialty Code"
+msgstr "Código Especialidad"
+
+#. module: jappointment
+#: code:addons/jappointment/models/medical_physician_schedule_template.py:282
+#, python-format
+msgid "Status"
+msgstr "Estado"
+
+#. module: jappointment
+#: field:medical.appointment,time_schedule_id:0
+msgid "Time Schedule"
+msgstr "ID Horarios"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+		<!--Menu Patient Evaluation-->
+        <menuitem id="medical_patient_evaluation_menu" 
+            name="Patient Evaluation" 
+            parent="medical.medical_patient_root"
+            sequence="20" 
+            action="medical_emr.medical_patient_evaluation_action" 
+            groups="medical.group_medical_doctor"
+            />
+
+		<!--Menu Patient Evolution-->
+        <menuitem id="medical_patient_evolution_menu" 
+            name="Patient Evolution" 
+            parent="medical.medical_patient_root"
+            sequence="20" 
+            action="medical_patient_evolution_action" 
+            groups="medical.group_medical_doctor"
+            />
+
+        <!--Menu Medical Patient Record-->
+        <menuitem id="medical_patient_record_menu" 
+            name="Medical Record" 
+            parent="medical.medical_patient_root"
+            sequence="20" 
+            action="medical_patient_record_action" 
+            groups="medical.group_medical_doctor"
+            />
+
+    </data>
+</openerp>

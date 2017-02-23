@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="medical_appointment_view_form_inh2" model="ir.ui.view">
+            <field name="name">medical.appointment.form</field>
+            <field name="model">medical.appointment</field>
+            <field name="priority" eval="8" />
+            <field name="inherit_id" ref="medical.medical_appointment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='stage_id']" position='before'>
+                    <button name="set_patient_turn" type="object" string="Confirm" attrs="{'invisible': [('patient_turn','&lt;&gt;',999)]}"/>
+                    <button name="set_appointment_done" type="object" string="Done"/>
+                    <button name="set_appointment_cancel" type="object" string="Cancel"/>
+                </xpath>
+                <xpath expr="//field[@name='appointment_date']" position='after'>
+                    <field name="time_schedule_id" options="{'no_quick_create': True, 'no_create_edit': True}" on_change="onchange_time_schedule_id(time_schedule_id)" domain="[('physician_schedule_id','=',physician_schedule_id),('is_free','=',True)]"/>
+                    <field name="physician_schedule_id" on_change="onchange_physician_schedule_id(physician_schedule_id)" invisible="1"/>
+                    <field name="parent_date" invisible="1"/>
+                    <field name="appointment_date" invisible="1"/>
+                    <field name="patient_turn" invisible="1"/>
+                </xpath>
+                <xpath expr="//field[@name='appointment_date']" position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='duration']" position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

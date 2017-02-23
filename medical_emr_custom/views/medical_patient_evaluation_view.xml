@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<record id="medical_patient_view_evaluation_form_ihn" model="ir.ui.view">
+			<field name="name">medical.patient.evaluation.form</field>
+			<field name="model">medical.patient.evaluation</field>
+			<field name="priority" eval="8" />
+			<field name="inherit_id" ref="medical_emr.medical_patient_view_evaluation_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//sheet" position="replace">
+					<header>
+                    	<button name="%(action_patient_report)d" 
+                    		string="Print" type="action"/>
+                    </header>
+					<sheet>
+                        <div>
+                        	<field name="is_created" invisible="1"/>
+                        </div>
+                        <div>
+                        	<group>
+                        		<group>
+                        			<field name="patient_id" required="1"/>
+		                            <field name="evaluation_date" readonly="1"/>
+		                            <field name="doctor_id" readonly="1" on_change="onchange_doctor_id(doctor_id)"/>
+	                            </group>
+                            	<group>
+        		                    <field name="evaluation_start" readonly="1"/>
+        		                    <field name="specialty_id" readonly="1"/>
+        		                    <field name="specialty_code" invisible="1"/>
+        		                </group>
+        		                <group colspan="4">
+		                        	<field name="evaluation_type" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                            <field name="chief_complaint" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                            <field name="present_illness" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                            <field name="notes" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	</group>
+                            </group>
+                        </div>
+                        <separator string="Signos Vitales"/>
+                        <div>
+	                        <group>
+	                        	<group>
+		                        	<field name="blood_pressure" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                        	<field name="bpm" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                        	<field name="respiratory_rate" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                        	<field name="temperature" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	</group>
+	                        	<group>
+		                        	<field name="weight" attrs="{'readonly':[('is_created','=',True)]}" on_change="onchange_height_weight(height,weight)" placeholder="En kilos"/>
+		                        	<field name="height" attrs="{'readonly':[('is_created','=',True)]}" on_change="onchange_height_weight(height,weight)" placeholder="En metros"/>
+		                        	<field name="bmi" readonly="1"/>
+	                        	</group>
+	                        	<group colspan="4">
+		                        	<field name="cockcroft_gault" attrs="{'readonly':[('is_created','=',True)]}"/>
+		                        	<field name="mdrd" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	</group>
+	                        </group>
+                        </div>
+
+                        <div attrs="{'invisible':[('specialty_code','!=','GINOBST')]}">
+                        	<separator string="Ginecologia"/>
+	                        <group>
+	                        	<field name="breasts" string="Mamas" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="uterine_tone" string="Tono Uterino" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="uterine_activity" string="Actividad Uterina" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="fetal_presentation" string="Presentacion Feto" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="fetal_situation" string="Situacion Feto" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="fetal_fcf" string="FCF" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="fetal_moves" string="Movimientos Fetales" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        </group>
+                        </div>
+
+                        <separator string="Examen Fisico"/>
+                        <div>
+	                        <group>
+	                        	<field name="head_neck" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="chest" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="abdomen" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="extremities" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="neurological" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="genitals" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="cardiopulmonary" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="others" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="ekg" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        </group>
+                        </div>
+                        <separator string="Ayudas Dianosticas"/>
+                        <div>
+	                        <group>
+	                        	<field name="glycemia" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="cholesterol_total" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="hdl" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="ldl" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="vldl" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="triglycerides" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="cbc_test" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="imagenologic" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="other_test" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        </group>
+                        </div>
+                        <separator string="Impresion Dianostica"/>
+                        <div>
+	                        <group>
+	                        	<field name="dx1" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="dx2" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="dx3" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="dx4" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="directions" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="referred" attrs="{'readonly':[('is_created','=',True)]}"/>
+	                        	<field name="evaluation_endtime" readonly="1"/>
+	                        </group>
+	                        <separator string="Evolutions" colspan="4"/>
+	                        <field name="evolution_ids" nolabel="1">
+	                            <tree string="Patient Evolutions">
+	                                <field name="date" string="Fecha"/>
+	                                <!--field name="name" string="Observaciones"/-->
+	                                <field name="is_created" invisible="1"/>
+	                            </tree>
+	                            <form string="Evolution">
+	                                <group >
+	                                    <field name="date" readonly="1"/>
+	                                    <field name="evolution_text"/> <!--attrs="{'readonly':[('is_created','=',True)]}"/-->
+	                                    <!--field name="is_created" invisible="1"/-->
+	                                </group>
+	                            </form>
+	                        </field>
+                        </div>
+                    </sheet>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="medical_patient_view_evaluation_search_inh" model="ir.ui.view">
+			<field name="name">medical.patient.evaluation.search</field>
+			<field name="model">medical.patient.evaluation</field>
+			<field name="inherit_id" ref="medical_emr.medical_patient_view_evaluation_search"/>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<xpath expr="//search" position="replace">
+					<search string="Medical Patient Evaluation">
+						<field name="id" />
+						<field name="patient_id" />
+						<field name="user_id" />
+						<field name="doctor_id" />
+						<field name="specialty_id" />
+						<field name="diagnosis_id" />
+					</search>
+				</xpath>
+			</field>
+		</record>
+
+		<record id="medical_patient_view_evaluation_tree_inh" model="ir.ui.view">
+			<field name="name">medical.patient.evaluation.tree</field>
+			<field name="model">medical.patient.evaluation</field>
+			<field name="inherit_id" ref="medical_emr.medical_patient_view_evaluation_tree"/>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<xpath expr="//tree" position="replace">
+					<tree string="Medical Patient Evaluation">
+                        <field name="evaluation_date"/>
+                        <field name="patient_id"/>
+                        <field name="doctor_id"/>
+                        <field name="chief_complaint"/>
+                        <field name="dx1"/>
+                        <field name="specialty_id"/>
+						<field name="eapb_order_id" />
+						<field name="id" />
+					</tree>
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</openerp>

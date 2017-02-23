@@ -1,0 +1,646 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jmedical
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20160324\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-18 06:17+0000\n"
+"PO-Revision-Date: 2016-06-18 01:21-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: Spanish\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "ADULTO SIN IDENTIFICACION"
+msgstr "ADULTO SIN IDENTIFICACION"
+
+#. module: jmedical
+#: selection:medical.patient,age_type:0
+msgid "ANIOS"
+msgstr "AÑOS"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Accompanist"
+msgstr "Acompañante"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Accompanist Data"
+msgstr "Datos Acompañante"
+
+#. module: jmedical
+#: help:medical.accompanist,date:0
+msgid "Accompanying the patient"
+msgstr "Accompanying the patient"
+
+#. module: jmedical
+#: field:medical.eapb,active:0 field:medical.family.tags,active:0
+#: field:medical.gynecological.tags,active:0
+#: field:medical.pathological.tags,active:0
+#: field:medical.personal.tags,active:0
+#: field:medical.pharmacological.tags,active:0
+#: field:medical.surgical.tags,active:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: jmedical
+#: help:res.country.state.city,name:0
+msgid "Administrative divisions of a state."
+msgstr "Los municipios en que se divide un departamento."
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_search_inh
+msgid "Age"
+msgstr "Edad"
+
+#. module: jmedical
+#: field:medical.patient,age_type:0
+msgid "Age Type"
+msgstr "Medida Edad"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Antecedentes"
+msgstr "Antecedentes"
+
+#. module: jmedical
+#: selection:medical.pathology,gender:0
+msgid "BOTH"
+msgstr "AMBOS"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_120
+msgid "CARDIOLOGIA"
+msgstr "CARDIOLOGIA"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "CEDULA DE CIUDADANIA"
+msgstr "CEDULA DE CIUDADANIA"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "CEDULA DE EXTRANJERIA"
+msgstr "CEDULA DE EXTRANJERIA"
+
+#. module: jmedical
+#: selection:medical.patient,patient_type:0
+msgid "CONTRIBUTIVO"
+msgstr "CONTRIBUTIVO"
+
+#. module: jmedical
+#: view:medical.appointment:jmedical.medical_appointment_view_calendar_inh
+msgid "Calendar View"
+msgstr "Vista Calendario"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Celular"
+msgstr "Celular"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form_inh
+#: field:medical.patient,city_id:0
+msgid "City"
+msgstr "Ciudad"
+
+#. module: jmedical
+#: field:res.country.state.city,code:0
+msgid "City Code"
+msgstr "Códido Municipio"
+
+#. module: jmedical
+#: field:res.country.state.city,name:0
+msgid "City Name"
+msgstr "Nombre"
+
+#. module: jmedical
+#: selection:medical.appointment,evaluation_type:0
+msgid "Control"
+msgstr "De Control"
+
+#. module: jmedical
+#: field:medical.accompanist,create_uid:0 field:medical.eapb,create_uid:0
+#: field:medical.family.tags,create_uid:0
+#: field:medical.gynecological.tags,create_uid:0
+#: field:medical.pathological.tags,create_uid:0
+#: field:medical.personal.tags,create_uid:0
+#: field:medical.pharmacological.tags,create_uid:0
+#: field:medical.surgical.tags,create_uid:0
+#: field:res.country.state.city,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: jmedical
+#: field:medical.accompanist,create_date:0 field:medical.eapb,create_date:0
+#: field:medical.family.tags,create_date:0
+#: field:medical.gynecological.tags,create_date:0
+#: field:medical.pathological.tags,create_date:0
+#: field:medical.personal.tags,create_date:0
+#: field:medical.pharmacological.tags,create_date:0
+#: field:medical.surgical.tags,create_date:0
+#: field:res.country.state.city,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: jmedical
+#: view:medical.appointment:jmedical.medical_appointment_view_search_inh
+msgid "Creation Month"
+msgstr "Mes de Creación"
+
+#. module: jmedical
+#: selection:medical.patient,age_type:0
+msgid "DIAS"
+msgstr "DIAS"
+
+#. module: jmedical
+#: field:medical.accompanist,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_search_inh
+msgid "DoB"
+msgstr "Fecha Nacimiento"
+
+#. module: jmedical
+#: model:ir.actions.act_window,name:jmedical.medical_eapb_action
+#: field:medical.patient,eapb_id:0
+msgid "EAPB"
+msgstr "EAPB"
+
+#. module: jmedical
+#: field:medical.eapb,code:0
+msgid "EAPB Code"
+msgstr "Código EAPB"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_ENDOPED
+msgid "ENDOCRINOLOGIA PEDIATRICA"
+msgstr "ENDOCRINOLOGIA PEDIATRICA"
+
+#. module: jmedical
+#: field:medical.appointment,evaluation_type:0
+msgid "Evaluation Type"
+msgstr "Tipo de Consulta"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Evaluations"
+msgstr "Evaluaciones"
+
+#. module: jmedical
+#: selection:medical.pathology,gender:0
+msgid "FEMALE"
+msgstr "FEMENINO"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_FONOAUD
+msgid "FONOAUDIOLOGIA"
+msgstr "FONOAUDIOLOGIA"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_family_id:0
+msgid "Family History"
+msgstr "Familiares"
+
+#. module: jmedical
+#: field:medical.patient,first_name:0
+msgid "First Name"
+msgstr "Primer Nombre"
+
+#. module: jmedical
+#: selection:medical.appointment,evaluation_type:0
+msgid "First Time"
+msgstr "De Primera Vez"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_GASTPED
+msgid "GASTROENTEROLOGIA PEDIATRICA"
+msgstr "GASTROENTEROLOGIA PEDIATRICA"
+
+#. module: jmedical
+#: field:medical.pathology,gender:0
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_search_inh
+msgid "Group By..."
+msgstr "Agrupar por"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_gynecological_id:0
+msgid "Gynecological History"
+msgstr "Ginecológicos"
+
+#. module: jmedical
+#: field:medical.accompanist,id:0 field:medical.eapb,id:0
+#: field:medical.family.tags,id:0 field:medical.gynecological.tags,id:0
+#: field:medical.pathological.tags,id:0 field:medical.personal.tags,id:0
+#: field:medical.pharmacological.tags,id:0 field:medical.surgical.tags,id:0
+#: field:res.country.state.city,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_INFEPED
+msgid "INFECTOLOGIA PEDIATRICA"
+msgstr "INFECTOLOGIA PEDIATRICA"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_search_ref
+#: view:medical.patient:jmedical.medical_patient_view_form_inh
+#: view:medical.patient:jmedical.medical_patient_view_tree_ihn
+msgid "Identificacion"
+msgstr "Identificación"
+
+#. module: jmedical
+#: field:medical.accompanist,write_uid:0 field:medical.eapb,write_uid:0
+#: field:medical.family.tags,write_uid:0
+#: field:medical.gynecological.tags,write_uid:0
+#: field:medical.pathological.tags,write_uid:0
+#: field:medical.personal.tags,write_uid:0
+#: field:medical.pharmacological.tags,write_uid:0
+#: field:medical.surgical.tags,write_uid:0
+#: field:res.country.state.city,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: jmedical
+#: field:medical.accompanist,write_date:0 field:medical.eapb,write_date:0
+#: field:medical.family.tags,write_date:0
+#: field:medical.gynecological.tags,write_date:0
+#: field:medical.pathological.tags,write_date:0
+#: field:medical.personal.tags,write_date:0
+#: field:medical.pharmacological.tags,write_date:0
+#: field:medical.surgical.tags,write_date:0
+#: field:res.country.state.city,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: jmedical
+#: selection:medical.pathology,gender:0
+msgid "MALE"
+msgstr "MASCULINO"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_MEDGEN
+msgid "MEDICINA GENERAL"
+msgstr "MEDICINA GENERAL"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_387
+msgid "MEDICINA INTERNA"
+msgstr "MEDICINA INTERNA"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "MENOR SIN IDENTIFICACION"
+msgstr "MENOR SIN IDENTIFICACION"
+
+#. module: jmedical
+#: selection:medical.patient,age_type:0
+msgid "MESES"
+msgstr "MESES"
+
+#. module: jmedical
+#: model:ir.ui.menu,name:jmedical.medical_eapb
+#: view:medical.eapb:jmedical.medical_eapb_view_form
+#: view:medical.eapb:jmedical.medical_eapb_view_tree
+msgid "Medical EAPB"
+msgstr "Medical EAPB"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_family_tags
+msgid "Medical Family History"
+msgstr "Medical Family History"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_gynecological_tags
+msgid "Medical Gynecological History"
+msgstr "Medical Gynecological History"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_pathological_tags
+msgid "Medical Pathological History"
+msgstr "Medical Pathological History"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_pathology
+msgid "Medical Pathology"
+msgstr "Medical Pathology"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_patient
+#: view:medical.patient:jmedical.medical_patient_view_search_inh
+msgid "Medical Patient"
+msgstr "Paciente Médico"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_patient_occupation
+msgid "Medical Patient Occupation"
+msgstr "Medical Patient Occupation"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_personal_tags
+msgid "Medical Personal History"
+msgstr "Medical Personal History"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_pharmacological_tags
+msgid "Medical Pharmacological History"
+msgstr "Medical Pharmacological History"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_surgical_tags
+msgid "Medical Surgical History"
+msgstr "Medical Surgical History"
+
+#. module: jmedical
+#: view:medical.appointment:jmedical.medical_appointment_view_search_inh
+msgid "Medico Hoy"
+msgstr "Medico Hoy"
+
+#. module: jmedical
+#: field:medical.patient,middle_name:0
+msgid "Middle Name"
+msgstr "Segundo Nombre"
+
+#. module: jmedical
+#: field:medical.accompanist,mobile:0
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: jmedical
+#: view:medical.appointment:jmedical.medical_appointment_view_search_inh
+msgid "Month"
+msgstr "Mes"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_410
+msgid "NEFROLOGIA"
+msgstr "NEFROLOGIA"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_NEURPED
+msgid "NEUROLOGIA PEDIATRICA"
+msgstr "NEUROLOGIA PEDIATRICA"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "NUMERO UNICO DE IDENTIFICACION"
+msgstr "NUMERO UNICO DE IDENTIFICACION"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_NUTDIET
+msgid "NUTRICION Y DIETETICA"
+msgstr "NUTRICION Y DIETETICA"
+
+#. module: jmedical
+#: field:medical.eapb,name:0
+#: view:medical.patient:jmedical.medical_patient_view_form_inh
+msgid "Name"
+msgstr "Nombre"
+
+#. module: jmedical
+#: view:website:report.external_layout_header
+#: view:website:report.internal_layout
+msgid "Nit:"
+msgstr "Nit:"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_514
+msgid "ORTOPEDIA Y TRAUMATOLOGIA"
+msgstr "ORTOPEDIA Y TRAUMATOLOGIA"
+
+#. module: jmedical
+#: selection:medical.patient,patient_type:0
+msgid "OTRO"
+msgstr "OTRO"
+
+#. module: jmedical
+#: selection:medical.patient,patient_type:0
+msgid "PARTICULAR"
+msgstr "PARTICULAR"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "PASAPORTE"
+msgstr "PASAPORTE"
+
+#. module: jmedical
+#: model:medical.specialty,name:jmedical.medical_specialty_550
+msgid "PEDIATRIA"
+msgstr "PEDIATRIA"
+
+#. module: jmedical
+#: view:website:report.internal_layout
+msgid "Page"
+msgstr "Página"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_res_partner
+msgid "Partner"
+msgstr "Empresa/Cliente"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_pathological_id:0
+msgid "Pathological History"
+msgstr "Patológicos"
+
+#. module: jmedical
+#: field:medical.accompanist,accompanist_id:0
+msgid "Patient Accompanist"
+msgstr "Acompañante"
+
+#. module: jmedical
+#: field:medical.patient,accompanist_ids:0
+msgid "Patient Accompanists"
+msgstr "Acompañantes"
+
+#. module: jmedical
+#: field:medical.patient,residence_area:0
+msgid "Patient Area of Residence"
+msgstr "Zona Residencia"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_medical_eapb
+msgid "Patient EAPB"
+msgstr "EAPB"
+
+#. module: jmedical
+#: field:medical.appointment,evaluation_id:0
+msgid "Patient Evaluation"
+msgstr "Historia No"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Patient Evaluations"
+msgstr "Evaluaciones "
+
+#. module: jmedical
+#: field:medical.patient,evolution_ids:0
+msgid "Patient Evolution"
+msgstr "Evoluciones del Paciente"
+
+#. module: jmedical
+#: field:medical.accompanist,patient_id:0
+msgid "Patient ID"
+msgstr "Paciente ID"
+
+#. module: jmedical
+#: field:res.partner,patient_id:0
+msgid "Patient Id"
+msgstr "Paciente Id"
+
+#. module: jmedical
+#: field:medical.patient,patient_type:0
+msgid "Patient Type"
+msgstr "Tipo Usuario"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_personal_id:0
+msgid "Personal History"
+msgstr "Personal"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_pharmacological_id:0
+msgid "Pharmacological History"
+msgstr "Farmacológicos"
+
+#. module: jmedical
+#: field:medical.patient,primary_last_name:0
+msgid "Primary Last Name"
+msgstr "Primer Apellido"
+
+#. module: jmedical
+#: help:medical.patient,primary_last_name:0
+msgid "Primer Apellido."
+msgstr "Primer Apellido."
+
+#. module: jmedical
+#: help:medical.patient,first_name:0
+msgid "Primer Nombre."
+msgstr "Primer Nombre."
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "REGISTRO CIVIL"
+msgstr "REGISTRO CIVIL"
+
+#. module: jmedical
+#: selection:medical.patient,residence_area:0
+msgid "RURAL"
+msgstr "RURAL"
+
+#. module: jmedical
+#: field:medical.patient,ref_type:0
+msgid "Reference Type"
+msgstr "Tipo Identificación"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+msgid "Relacion de packs comprados"
+msgstr "Relacion de packs comprados"
+
+#. module: jmedical
+#: selection:medical.patient,patient_type:0
+msgid "SUBSIDIADO"
+msgstr "SUBSIDIADO"
+
+#. module: jmedical
+#: field:medical.patient,second_last_name:0
+msgid "Second Last Name"
+msgstr "Segundo Apellido"
+
+#. module: jmedical
+#: help:medical.patient,second_last_name:0
+msgid "Segundo Apellido."
+msgstr "Segundo Apellido."
+
+#. module: jmedical
+#: help:medical.patient,middle_name:0
+msgid "Segundo Nombre."
+msgstr "Segundo Nombre."
+
+#. module: jmedical
+#: help:medical.pathology,gender:0
+msgid "Sexo al que aplica la enfermedad."
+msgstr "Sexo al que aplica la enfermedad."
+
+#. module: jmedical
+#: field:res.country.state.city,state_id:0
+msgid "State"
+msgstr "Departamento"
+
+#. module: jmedical
+#: model:ir.model,name:jmedical.model_res_country_state_city
+msgid "State city"
+msgstr "Municipio"
+
+#. module: jmedical
+#: field:medical.patient,medical_history_surgical_id:0
+msgid "Surgical History"
+msgstr "Quirúrgicos"
+
+#. module: jmedical
+#: selection:medical.patient,ref_type:0
+msgid "TARJETA DE IDENTIDAD"
+msgstr "TARJETA DE IDENTIDAD"
+
+#. module: jmedical
+#: field:medical.family.tags,name:0 field:medical.gynecological.tags,name:0
+#: field:medical.pathological.tags,name:0 field:medical.personal.tags,name:0
+#: field:medical.pharmacological.tags,name:0
+#: field:medical.surgical.tags,name:0
+msgid "Tag Name"
+msgstr "Etiqueta"
+
+#. module: jmedical
+#: view:medical.patient:jmedical.medical_patient_view_form
+#: view:medical.patient:jmedical.medical_patient_view_form_inh
+msgid "Tags..."
+msgstr "Etiquetas"
+
+#. module: jmedical
+#: help:medical.eapb,active:0 help:medical.family.tags,active:0
+#: help:medical.gynecological.tags,active:0
+#: help:medical.pathological.tags,active:0 help:medical.personal.tags,active:0
+#: help:medical.pharmacological.tags,active:0
+#: help:medical.surgical.tags,active:0
+msgid "The active field allows you to hide the category without removing it."
+msgstr "The active field allows you to hide the category without removing it."
+
+#. module: jmedical
+#: help:res.country.state.city,code:0
+msgid "The city code in max. three chars."
+msgstr "The city code in max. three chars."
+
+#. module: jmedical
+#: view:medical.appointment:jmedical.medical_appointment_view_search_inh
+msgid "Todos Hoy"
+msgstr "Todos Hoy"
+
+#. module: jmedical
+#: selection:medical.patient,residence_area:0
+msgid "URBANA"
+msgstr "URBANA"
+
+#. module: jmedical
+#: selection:medical.patient,patient_type:0
+msgid "VINCULADO"
+msgstr "VINCULADO"

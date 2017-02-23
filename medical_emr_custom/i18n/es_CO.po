@@ -1,0 +1,818 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* jmedical_emr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20160324\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-25 21:24+0000\n"
+"PO-Revision-Date: 2016-06-25 16:28-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: Spanish\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "AYUDAS DIAGNOSTICAS"
+msgstr "AYUDAS DIAGNOSTICAS"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,abdomen:0
+msgid "Abdomen"
+msgstr "Abdomen"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Abdomen:"
+msgstr "Abdomen:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Actividad Uterina"
+msgstr "Actividad Uterina"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Actividad Uterina:"
+msgstr "Actividad Uterina:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Ayudas Dianosticas"
+msgstr "Ayudas Diagnósticas"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,blood_pressure:0
+msgid "Blood Pressure"
+msgstr "Tensión Arterial"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,breasts:0
+msgid "Breasts"
+msgstr "Mamas"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,cbc_test:0
+msgid "CBC Test Result"
+msgstr "Hemograma"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Cabeza y Cuello:"
+msgstr "Cabeza y Cuello:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Cardio/Pulmonar:"
+msgstr "Cardio/Pulmonar:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,cardiopulmonary:0
+msgid "Cardiopulmonary"
+msgstr "Cardiopulmonar"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,chest:0
+msgid "Chest"
+msgstr "Tórax"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,cockcroft_gault:0
+msgid "Cockcroft - Gault"
+msgstr "Cockcroft - Gault"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Cockcroft-Gault:"
+msgstr "Cockcroft-Gault:"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,code:0
+msgid "Code"
+msgstr "Code"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Colesterol HDL:"
+msgstr "Colesterol HDL:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Colesterol LDL:"
+msgstr "Colesterol LDL:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Colesterol Total:"
+msgstr "Colesterol Total:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Colesterol VLDL:"
+msgstr "Colesterol VLDL:"
+
+#. module: jmedical_emr
+#: field:medical.patient.record,date:0
+msgid "Create Date"
+msgstr "Create Date"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,is_created:0
+#: field:medical.patient.evolution,is_created:0
+#: field:medical.patient.record,is_created:0
+msgid "Created"
+msgstr "Creado"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,create_uid:0
+#: field:medical.patient.evolution,create_uid:0
+#: field:medical.patient.record,create_uid:0
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,create_date:0
+#: field:medical.patient.evolution,create_date:0
+#: field:medical.patient.record,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "DATOS PERSONALES"
+msgstr "DATOS PERSONALES"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "DX Principal:"
+msgstr "DX Principal:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,dx1:0
+msgid "DX1"
+msgstr "DX1"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,dx2:0
+msgid "DX2"
+msgstr "DX2"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "DX2:"
+msgstr "DX2:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,dx3:0
+msgid "DX3"
+msgstr "DX3"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "DX3:"
+msgstr "DX3:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,dx4:0
+msgid "DX4"
+msgstr "DX4"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "DX4:"
+msgstr "DX4:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evolution,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,name:0 field:medical.patient.evolution,name:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: jmedical_emr
+#: help:medical.patient.evolution,evolution_text:0
+msgid "Description of evolution."
+msgstr "Descripción de la evolución del paciente"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Direccion:"
+msgstr "Dirección:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evolution,doctor_id:0
+msgid "Doctor"
+msgstr "Doctor"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,ekg:0
+msgid "EKG Test Result"
+msgstr "Reporte EKG"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+msgid "EVOLUCION"
+msgstr "EVOLUCION"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "EXAMEN FISICO"
+msgstr "EXAMEN FISICO"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Edad:"
+msgstr "Edad:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "En kilos"
+msgstr "En kilos"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "En metros"
+msgstr "En metros"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Enfermedad Actual:"
+msgstr "Enfermedad Actual:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Entidad:"
+msgstr "Entidad:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Especialidad:"
+msgstr "Especialidad:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Estado Civil:"
+msgstr "Estado Civil:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evolution,evaluation_id:0
+msgid "Evaluation"
+msgstr "Evaluación"
+
+#. module: jmedical_emr
+#: view:medical.patient.record:jmedical_emr.medical_patient_record_view_form
+#: field:medical.patient.record,evaluation_ids:0
+msgid "Evaluations"
+msgstr "Evaluations"
+
+#. module: jmedical_emr
+#: model:ir.actions.report.xml,name:jmedical_emr.action_patient_evolution_report
+msgid "Evolucion"
+msgstr "Evolucion"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+#: field:medical.patient.evolution,evolution_text:0
+msgid "Evolution"
+msgstr "Evolución"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Evolutions"
+msgstr "Evoluciones"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Examen Fisico"
+msgstr "Examen Físico"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Extremidades:"
+msgstr "Extremidades:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,extremities:0
+msgid "Extremities"
+msgstr "Extremidades"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+#: field:medical.patient.evaluation,fetal_fcf:0
+msgid "FCF"
+msgstr "FCF"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "FCF:"
+msgstr "FCF:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "FIRMA DEL MEDICO-CEDULA-RM"
+msgstr "FIRMA DEL MEDICO-CEDULA-RM"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Fecha Nacimiento:"
+msgstr "Fecha Nacimiento:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Fecha:"
+msgstr "Fecha:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,fetal_moves:0
+msgid "Fetal Moves"
+msgstr "Movimientos Fetales"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,fetal_situation:0
+msgid "Fetal Situation"
+msgstr "Situación Feto"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Frec. Cardiaca:"
+msgstr "Frec. Cardíaca:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Frec. Respiratoria:"
+msgstr "Frec. Respiratoria:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "GINECOLOGIA"
+msgstr "GINECOLOGIA"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,genitals:0
+msgid "Genitals and urinary"
+msgstr "Genito/Urinarios"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Genito/Urinarios:"
+msgstr "Genito/Urinarios:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Ginecologia"
+msgstr "Ginecología"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Glicemia:"
+msgstr "Glicemia:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "HISTORIA CLINICA"
+msgstr "HISTORIA CLINICA"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,head_neck:0
+msgid "Head and Neck"
+msgstr "Cabeza y Cuello"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Hemograma:"
+msgstr "Hemograma:"
+
+#. module: jmedical_emr
+#: model:ir.actions.report.xml,name:jmedical_emr.action_patient_report
+msgid "Historia"
+msgstr "Historia"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+msgid "Historia No:"
+msgstr "Historia No:"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,id:0 field:medical.patient.evolution,id:0
+#: field:medical.patient.record,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "IMC:"
+msgstr "IMC:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "IMPRESION DIAGNOSTICA"
+msgstr "IMPRESION DIAGNOSTICA"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Identificacion:"
+msgstr "Identificación:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,imagenologic:0
+msgid "Imagenologic Report"
+msgstr "Reporte Imagenología"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Impresion Dianostica"
+msgstr "Impresión Diagnóstica"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "KG/M2"
+msgstr "KG/M2"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "LAT/MIN"
+msgstr "LAT/MIN"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,triglycerides:0
+msgid "Last Triglycerides"
+msgstr "Triglicéridos"
+
+#. module: jmedical_emr
+#: help:medical.patient.evaluation,triglycerides:0
+msgid "Last Triglycerides reading. Can be approximative"
+msgstr "Last Triglycerides reading. Can be approximative"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,write_uid:0
+#: field:medical.patient.evolution,write_uid:0
+#: field:medical.patient.record,write_uid:0
+msgid "Last Updated by"
+msgstr "Ultima Actualización por"
+
+#. module: jmedical_emr
+#: field:medical.evaluation.type,write_date:0
+#: field:medical.patient.evolution,write_date:0
+#: field:medical.patient.record,write_date:0
+msgid "Last Updated on"
+msgstr "Actualizado en"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,vldl:0
+msgid "Last VLDL"
+msgstr "VLDL"
+
+#. module: jmedical_emr
+#: help:medical.patient.evaluation,vldl:0
+msgid "Last VLDL Cholesterol reading. Can be approximative"
+msgstr "Last VLDL Cholesterol reading. Can be approximative"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,mdrd:0
+msgid "MDRD"
+msgstr "MDRD"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "MDRD:"
+msgstr "MDRD:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Mamas"
+msgstr "Mamas"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Mamas:"
+msgstr "Mamas:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_search_inh
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_tree_inh
+#: view:medical.patient.evolution:jmedical_emr.medical_patient_view_evolution_form
+#: view:medical.patient.evolution:jmedical_emr.medical_patient_view_evolution_tree
+#: view:medical.patient.record:jmedical_emr.medical_patient_record_view_form
+msgid "Medical Patient Evaluation"
+msgstr "Evaluación Paciente"
+
+#. module: jmedical_emr
+#: view:medical.patient.record:jmedical_emr.medical_patient_record_view_form
+#: view:medical.patient.record:jmedical_emr.medical_patient_view_record_tree
+msgid "Medical Patient Record"
+msgstr "Historia Clínica"
+
+#. module: jmedical_emr
+#: model:ir.ui.menu,name:jmedical_emr.medical_patient_record_menu
+msgid "Medical Record"
+msgstr "Historia Clínica"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,emr_id:0
+msgid "Medical Record ID"
+msgstr "Historia No"
+
+#. module: jmedical_emr
+#: code:addons/jmedical_emr/models/medical_record.py:36
+#, python-format
+msgid "Medical Record already exists and violates unique field constraint"
+msgstr "No se puede crear historia clínica, porque ya existe para el paciente"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Motivo de Consulta:"
+msgstr "Motivo de Consulta:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Movimientos Fetales"
+msgstr "Movimientos Fetales"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Movimientos Fetales:"
+msgstr "Movimientos Fetales:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,neurological:0
+msgid "Neurological"
+msgstr "Neurológico"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Neurologico:"
+msgstr "Neurológico:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "No:"
+msgstr "No:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Nombre Paciente:"
+msgstr "Nombre Paciente:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Notas:"
+msgstr "Notas:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,other_test:0
+msgid "Other Test Result"
+msgstr "Otros Exámenes"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,others:0
+msgid "Others"
+msgstr "Otros"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Otros:"
+msgstr "Otros:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evolution,patient_id:0
+#: field:medical.patient.record,patient_id:0
+msgid "Patient"
+msgstr "Paciente"
+
+#. module: jmedical_emr
+#: help:medical.patient.evaluation,blood_pressure:0
+msgid "Patient Blood Pressure"
+msgstr "Tensión arterial del paciente"
+
+#. module: jmedical_emr
+#: model:ir.ui.menu,name:jmedical_emr.medical_patient_evaluation_menu
+msgid "Patient Evaluation"
+msgstr "Consultas"
+
+#. module: jmedical_emr
+#: model:ir.actions.act_window,name:jmedical_emr.medical_patient_evolution_action
+#: model:ir.ui.menu,name:jmedical_emr.medical_patient_evolution_menu
+msgid "Patient Evolution"
+msgstr "Evolución"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+#: field:medical.patient.evaluation,evolution_ids:0
+msgid "Patient Evolutions"
+msgstr "Evoluciones"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,patient_name:0
+msgid "Patient Name"
+msgstr "Nombre Paciente"
+
+#. module: jmedical_emr
+#: model:ir.actions.act_window,name:jmedical_emr.medical_patient_record_action
+msgid "Patient Record"
+msgstr "Historia Clínica Paciente"
+
+#. module: jmedical_emr
+#: help:medical.patient.record,code:0
+msgid "Patient Social Security Number or equivalent"
+msgstr "Identificación del Paciente"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Peso:"
+msgstr "Peso:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Plan Terapeutico:"
+msgstr "Plan Terapéutico:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Presentacion Feto"
+msgstr "Presentación Feto"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Presentacion Feto:"
+msgstr "Presentación Feto:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Procedencia:"
+msgstr "Procedencia:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Profesional:"
+msgstr "Profesional:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "RESP/MIN"
+msgstr "RESP/MIN"
+
+#. module: jmedical_emr
+#: field:medical.patient.record,code:0
+msgid "Record Number"
+msgstr "Historia No"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,referred:0
+msgid "Referred to..."
+msgstr "Remisión"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Registro Profesional:"
+msgstr "Registro Profesional:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Remision:"
+msgstr "Remisión:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Reporte ElectroCardiograma:"
+msgstr "Reporte ElectroCardiograma:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Reporte Imagenologico:"
+msgstr "Reporte Imagenológico:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "SIGNOS VITALES"
+msgstr "SIGNOS VITALES"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Sexo:"
+msgstr "Sexo:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Signos Vitales"
+msgstr "Signos Vitales"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Situacion Feto"
+msgstr "Situación Feto"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Situacion Feto:"
+msgstr "Situación Feto:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,specialty_code:0
+msgid "Specialty Code"
+msgstr "Código Especialidad"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Talla:"
+msgstr "Talla:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "Telefono:"
+msgstr "Teléfono:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Temperatura:"
+msgstr "Temperatura:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Tension Arterial:"
+msgstr "Tensión Arterial:"
+
+#. module: jmedical_emr
+#: view:medical.patient.evaluation:jmedical_emr.medical_patient_view_evaluation_form_ihn
+msgid "Tono Uterino"
+msgstr "Tono Uterino"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Tono Uterino:"
+msgstr "Tono Uterino:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Torax:"
+msgstr "Tórax:"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "Trigliceridos:"
+msgstr "Triglicéridos:"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,uterine_activity:0
+msgid "Uterine Activity"
+msgstr "Actividad Uterina"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,uterine_tone:0
+msgid "Uterine Tone"
+msgstr "Tono Uterino"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_evo_report
+#: view:website:jmedical_emr.patient_report
+msgid "________________________________________"
+msgstr "________________________________________"
+
+#. module: jmedical_emr
+#: field:medical.patient.evaluation,fetal_presentation:0
+msgid "fetal presentation"
+msgstr "Presentación Fetal"
+
+#. module: jmedical_emr
+#: view:medical.patient:jmedical_emr.jmedical_emr_medical_patient_view_form_inh
+msgid "medical.group_medical_doctor"
+msgstr "medical.group_medical_doctor"
+
+#. module: jmedical_emr
+#: view:website:jmedical_emr.patient_report
+msgid "°C"
+msgstr "°C"

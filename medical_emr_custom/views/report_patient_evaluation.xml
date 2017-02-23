@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="patient_report">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="report.external_layout">
+                        <div class="page" style="font-size: 12px">
+                            <div class="row mt0 " >
+                                <div class="col-xs-4 col-xs-offset-4" style="text-align: center;font-size: 170%">
+                                    <strong>HISTORIA CLINICA</strong>
+                                </div>
+                                <div class="col-xs-4" style="text-align: right;">
+                                    No: <span t-esc="str(o.id).zfill(6)"/>
+                                </div>
+                            </div>
+                            <div class="row mb16" style="text-align: center;background-color: #B9BCBD">
+                                <strong>DATOS PERSONALES</strong>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Nombre Paciente:</div>
+                                <div class="col-xs-4"><strong><span t-field="o.patient_name"/></strong></div>
+                                <div class="col-xs-2">Identificacion:</div>
+                                <div class="col-xs-2"><span t-field="o.patient_id.ref"/></div>
+                                <div class="col-xs-2">Fecha: <span t-field="o.evaluation_date"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Fecha Nacimiento:</div>
+                                <div class="col-xs-4"><span t-field="o.patient_id.dob"/>  Edad: <span t-field="o.patient_id.age"/></div>
+                                <div class="col-xs-2">Estado Civil:</div>
+                                <div class="col-xs-2"><span t-field="o.patient_id.marital_status"/></div>
+                                <div class="col-xs-2">Sexo: <span t-field="o.patient_id.gender"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Direccion:</div>
+                                <div class="col-xs-4"><span t-field="o.patient_id.street"/></div>
+                                <div class="col-xs-2">Telefono:</div>
+                                <div class="col-xs-2"><span t-field="o.patient_id.mobile"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Procedencia:</div>
+                                <div class="col-xs-4" t-if="o.patient_id.state_id"><span t-field="o.patient_id.city_id"/>
+                                                    (<span t-field="o.patient_id.state_id"/>)</div>
+                                <div class="col-xs-2">Entidad:</div>
+                                <div class="col-xs-4"><span t-field="o.patient_id.eapb_id"/></div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-2">Motivo de Consulta:</div>
+                                <div class="col-xs-10"><span t-field="o.chief_complaint"/></div>
+                            </div>
+                            <div class="row" style="font-size: 10px">
+                                <div class="col-xs-2">Enfermedad Actual:</div>
+                                <div class="col-xs-10"><span t-field="o.present_illness"/></div>
+                            </div>
+                            <div class="row" t-if="o.notes">
+                                <div class="col-xs-2">Notas:</div>
+                                <div class="col-xs-10"><span t-field="o.notes"/></div>
+                            </div>
+                            <!-- DATOS DE LA HISTORIA CLINICA - SIGNOS VITALES -->
+                            <div class="row mt16 mb16" style="text-align:center;background-color: #B9BCBD">
+                                <span class="col-xs-12"><strong>SIGNOS VITALES</strong></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Tension Arterial:</div>
+                                <div class="col-xs-2"><span t-field="o.blood_pressure"/> </div>
+                                <div class="col-xs-2">Frec. Cardiaca:</div>
+                                <div class="col-xs-2"><span t-field="o.bpm"/> LAT/MIN</div>
+                                <div class="col-xs-2">Frec. Respiratoria:</div>
+                                <div class="col-xs-2"><span t-field="o.respiratory_rate"/> RESP/MIN</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Temperatura:</div>
+                                <div class="col-xs-2"><span t-field="o.temperature"/> °C</div>
+                                <div class="col-xs-2">Peso:</div>
+                                <div class="col-xs-2"><span t-field="o.weight"/> KG</div>
+                                <div class="col-xs-2">Talla:</div>
+                                <div class="col-xs-2"><span t-field="o.height"/> M</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">IMC:</div>
+                                <div class="col-xs-2"><span t-field="o.bmi"/> KG/M2</div>
+                                <div class="col-xs-2"> Cockcroft-Gault:</div>
+                                <div class="col-xs-2"><span t-field="o.cockcroft_gault"/></div>
+                                <div class="col-xs-2">MDRD:</div>
+                                <div class="col-xs-2"><span t-field="o.mdrd"/></div>
+                            </div>
+                            <!-- DATOS DE LA HISTORIA CLINICA - GINECOLOGICOS -->
+                        <div t-if="o.specialty_code=='GINOBST'">
+                            <div class="row mt16 mb16" style="text-align:center;background-color: #B9BCBD">
+                                <span class="col-xs-12"><strong>GINECOLOGIA</strong></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Mamas:</div>
+                                <div class="col-xs-10"><span t-field="o.breasts"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Tono Uterino:</div>
+                                <div class="col-xs-10"><span t-field="o.uterine_tone"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Actividad Uterina:</div>
+                                <div class="col-xs-10"><span t-field="o.uterine_activity"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Presentacion Feto:</div>
+                                <div class="col-xs-10"><span t-field="o.fetal_presentation"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Situacion Feto:</div>
+                                <div class="col-xs-10"><span t-field="o.fetal_situation"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">FCF:</div>
+                                <div class="col-xs-10"><span t-field="o.fetal_fcf"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Movimientos Fetales:</div>
+                                <div class="col-xs-10"><span t-field="o.fetal_moves"/></div>
+                            </div>
+                        </div>
+                            <!-- DATOS DE LA HISTORIA CLINICA - EXAMEN FISICO -->
+                            <div class="row mt16 mb16" style="text-align:center;background-color: #B9BCBD">
+                                <span class="col-xs-12"><strong>EXAMEN FISICO</strong></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Cabeza y Cuello:</div>
+                                <div class="col-xs-10"><span t-field="o.head_neck"/></div>
+                            </div>
+                                <div class="col-xs-2">Torax:</div>
+                                <div class="col-xs-10"><span t-field="o.chest"/></div>
+                            <div class="row">
+                                <div class="col-xs-2">Abdomen:</div>
+                                <div class="col-xs-10"><span t-field="o.abdomen"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Extremidades:</div>
+                                <div class="col-xs-10"><span t-field="o.extremities"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Neurologico:</div>
+                                <div class="col-xs-10"><span t-field="o.neurological"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Genito/Urinarios:</div>
+                                <div class="col-xs-10"><span t-field="o.genitals"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Cardio/Pulmonar:</div>
+                                <div class="col-xs-10"><span t-field="o.cardiopulmonary"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Otros:</div>
+                                <div class="col-xs-10"><span t-field="o.others"/></div>
+                            </div>
+                            <div class="row" t-if="o.ekg">
+                                <div class="col-xs-2">Reporte ElectroCardiograma:</div>
+                                <div class="col-xs-10"><span t-field="o.ekg"/></div>
+                            </div>
+                            <!-- DATOS DE LA HISTORIA CLINICA - AYUDAS DIAGNOSTICAS -->
+                            <div class="row mt16 mb16" style="text-align:center;background-color: #B9BCBD">
+                                <span class="col-xs-12"><strong>AYUDAS DIAGNOSTICAS</strong></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Glicemia:</div>
+                                <div class="col-xs-10"><span t-field="o.glycemia"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Colesterol Total:</div>
+                                <div class="col-xs-10"><span t-field="o.cholesterol_total"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Colesterol HDL:</div>
+                                <div class="col-xs-10"><span t-field="o.hdl"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Colesterol LDL:</div>
+                                <div class="col-xs-10"><span t-field="o.ldl"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Colesterol VLDL:</div>
+                                <div class="col-xs-10"><span t-field="o.vldl"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Trigliceridos:</div>
+                                <div class="col-xs-10"><span t-field="o.triglycerides"/></div>
+                            </div>
+                            <div class="row" t-if="o.cbc_test">
+                                <div class="col-xs-2">Hemograma:</div>
+                                <div class="col-xs-10"><span t-field="o.cbc_test"/></div>
+                            </div>
+                            <div class="row" t-if="o.other_test">
+                                <div class="col-xs-2">Otros:</div>
+                                <div class="col-xs-10"><span t-field="o.other_test"/></div>
+                            </div>
+                            <div class="row" t-if="o.imagenologic">
+                                <div class="col-xs-2">Reporte Imagenologico:</div>
+                                <div class="col-xs-10"><span t-field="o.imagenologic"/></div>
+                            </div>
+                            <!-- DATOS DE LA HISTORIA CLINICA - IMPRESION DIAGNOSTICA -->
+                            <div class="row mt16 mb16" style="text-align:center;background-color: #B9BCBD">
+                                <span class="col-xs-12"><strong>IMPRESION DIAGNOSTICA</strong></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">DX Principal:</div>
+                                <div class="col-xs-10"><span t-field="o.dx1"/></div>
+                            </div>
+                            <div class="row" t-if="o.dx2">
+                                <div class="col-xs-2">DX2:</div>
+                                <div class="col-xs-10"><span t-field="o.dx2"/></div>
+                            </div>
+                            <div class="row" t-if="o.dx3">
+                                <div class="col-xs-2">DX3:</div>
+                                <div class="col-xs-10"><span t-field="o.dx3"/></div>
+                            </div>
+                            <div class="row" t-if="o.dx4">
+                                <div class="col-xs-2">DX4:</div>
+                                <div class="col-xs-10"><span t-field="o.dx4"/></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2">Plan Terapeutico:</div>
+                                <div class="col-xs-10"><span t-field="o.directions"/></div>
+                            </div>
+                            <div class="row" t-if="o.referred">
+                                <div class="col-xs-2">Remision:</div>
+                                <div class="col-xs-10"><span t-field="o.referred"/></div>
+                            </div>
+
+                            <!-- DATOS DEL MEDICO -->
+                            <div class="row mt128">
+                                <div class="col-xs-3">Profesional:</div>
+                                <div class="col-xs-4"><span t-field="o.doctor_id"/></div>
+                                <div class="col-xs-5" style="text-align: center">________________________________________</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">Registro Profesional:</div>
+                                <div class="col-xs-4"><span t-field="o.doctor_id.ref"/></div>
+                                <div class="col-xs-5" style="text-align: center">FIRMA DEL MEDICO-CEDULA-RM</div>
+                            </div>
+                            <div class="row mb32">
+                                <div class="col-xs-3">Especialidad:</div>
+                                <div class="col-xs-4"><span t-field="o.specialty_id"/></div>
+                            </div>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</openerp>

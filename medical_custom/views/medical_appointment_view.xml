@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.actions.act_window" id="medical.medical_appointment_action">
+            <field name="name">Appointment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.appointment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_doctor_appointment_today":1}</field>
+            <field name="search_view_id" ref="medical.medical_appointment_view_search" />
+        </record>
+
+        <!-- Se borra la accion de la vista kanban y calendar de la vista de Citas Medicas -->
+        <delete model="ir.actions.act_window.view" id="medical.medical_appointment_action_kanban" />
+        <delete model="ir.actions.act_window.view" id="medical.medical_appointment_action_calendar"/>
+
+        <record id="medical_appointment_view_search_inh" model="ir.ui.view">
+            <field name="name">medical.appointment.search</field>
+            <field name="model">medical.appointment</field>
+            <field name="priority" eval="8" />
+            <field name="inherit_id" ref="medical.medical_appointment_view_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position='replace'>
+                    <search string="Medical Appointment">
+                        <field name="patient_id" />
+                        <field name="physician_id" />
+                        <field name="appointment_date" />                    
+                        <newline />
+                        <group expand="0" string="Group By...">
+                            <filter string="Date and Time" domain="[]"
+                                context="{'group_by':'appointment_date'}" />
+                            <filter string="Physician" domain="[]" context="{'group_by':'physician_id'}" />
+                            <filter string="Month" domain="[]" context="{'group_by':'create_date:month'}" help="Creation Month"/>
+                            <filter string="Todos Hoy" domain="[('appointment_date', '&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0))),('appointment_date', '&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59)))]" />
+                            <filter string="Medico Hoy" name="doctor_appointment_today" domain="[('appointment_date', '&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0))),('appointment_date', '&lt;=', datetime.datetime.combine(context_today(), datetime.time(23,59,59))),('stage_id', 'in', ['En Espera','En Consulta'])]" />
+                        </group>
+                    </search>
+                </xpath>
+            </field>
+        </record>
+    <!--
+        <record id="medical_appointment_view_calendar_inh" model="ir.ui.view">
+            <field name="name">medical.appointment.calendar</field>
+            <field name="model">medical.appointment</field>
+            <field eval="2" name="priority"/>
+            <field name="inherit_id" ref="medical.medical_appointment_view_calendar"/>
+            <field name="arch" type="xml">
+                <xpath expr="//calendar" position='replace'>
+                    <calendar color="physician_id" date_start="appointment_date" date_stop="date_end" string="Calendar View" mode="week" date_delay="duration">
+                        <field name="patient_id"/>
+                        <field name="physician_id"/>
+                    </calendar>
+                </xpath>
+            </field>
+        </record>
+    -->
+
+        <record id="medical_appointment_view_form_inh" model="ir.ui.view">
+            <field name="name">medical.appointment.form</field>
+            <field name="model">medical.appointment</field>
+            <field name="priority" eval="8" />
+            <field name="inherit_id" ref="medical.medical_appointment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='alias']" position='replace'>
+                    <field name="eapb_id" />
+                    <field name="eapb_order_id" options="{'no_quick_create': True}"/>
+                </xpath>
+                <xpath expr="//field[@name='urgency']" position='before'>
+                    <field name="emr_id" readonly="1"/>
+                    <field name="evaluation_id" readonly="1"/>
+                </xpath>
+                <xpath expr="//field[@name='urgency']" position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='consultations']" position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='institution_id']" position='attributes'>
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='specialty_id']" position='attributes'>
+                    <attribute name="readonly">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='specialty_id']" position='after'>
+                    <field name="evaluation_type_id" options="{'no_quick_create': True, 'no_create_edit': True}"/>
+                </xpath>
+                <xpath expr="//field[@name='physician_id']" position='attributes'>
+                    <attribute name="options">{'no_quick_create': True, 'no_create_edit': True}</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="medical_appointment_view_tree_inh" model="ir.ui.view">
+            <field name="name">medical.appointment.tree</field>
+            <field name="model">medical.appointment</field>
+            <field name="priority" eval="8" />
+            <field name="inherit_id" ref="medical.medical_appointment_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='alias']" position='replace'>
+                    <field name="eapb_order_id"/>
+                    <field name="evaluation_id"/>
+                </xpath>
+                <xpath expr="//field[@name='appointment_type']" position='replace'>
+                    <field name="evaluation_type_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

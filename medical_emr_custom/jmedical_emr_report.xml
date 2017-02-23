@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report
+            id="action_patient_report"
+            model="medical.patient.evaluation"
+            string="Historia"
+            report_type="qweb-pdf"
+            name="jmedical_emr.patient_report"
+            file="jmedical_emr.report_patient_evaluation"
+        />
+
+        <report
+            id="action_patient_evolution_report"
+            model="medical.patient.evolution"
+            string="Evolucion"
+            report_type="qweb-pdf"
+            name="jmedical_emr.patient_evo_report"
+            file="jmedical_emr.report_patient_evolution"
+        />
+
+    </data>
+</openerp>

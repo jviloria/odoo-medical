@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+         <record id="medical_pathology_view_form_inh" model="ir.ui.view">
+             <field name="name">medical.pathology.view.form.inh</field>
+             <field name="model">medical.pathology</field>
+             <field name="inherit_id" ref="medical_disease.medical_pathology_view_form"/>
+             <field name="arch" type="xml">
+                <xpath expr="//field[@name='code']" position='after'>
+                    <field name="gender"/>
+                </xpath>
+             </field>
+         </record>
+
+        <record id="medical.medical_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(4,ref('medical.group_medical_user'))]"/>
+        </record>
+
+    </data>
+</openerp>

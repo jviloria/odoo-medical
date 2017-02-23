@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+	<template id="internal_layout_inherit" inherit_id="report.internal_layout">
+		<xpath expr="//div[@class='header']" position="replace">
+		    <div class="header">
+		        <div class="row">
+		            <div class="col-xs-3 mt16">
+		            	<img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 90px;"/>
+		        	</div>
+		            <div class="col-xs-6 mt32 text-center">
+		                <span t-esc="company.name" class="mb8" style="font-family: Helvetica;font-size: 22px;font-weight: 300"/><br/>
+		                <span style="font-family: Helvetica;font-size: 16px;font-weight: 300"><span t-esc="company.street"/> <span t-esc="company.city"/> (<span t-esc="company.state_id.name"/>) </span><br/>
+		                <span style="font-family: Helvetica;font-size: 14px;font-weight: 300">Nit: <span t-esc="company.company_registry"/></span>
+		            </div>
+		            <div class="col-xs-3 text-right mt32">
+		                <ul class="list-inline">
+		                	<li>Page</li>
+		                    <li><span class="page"/></li>
+		                    <li>/</li>
+		                    <li><span class="topage"/></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</xpath>
+	</template>
+
+	<template id="external_layout_header_inherit" inherit_id="report.external_layout_header">
+		<xpath expr="//div[@class='header']" position="replace">
+		    <div class="header">
+		        <div class="row">
+		            <div class="col-xs-3 mt16">
+		            	<img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % company.logo" style="max-height: 90px;"/>
+		        	</div>
+		            <div class="col-xs-6 mt32 text-center">
+		                <span t-esc="company.name" class="mb8" style="font-family: Helvetica;font-size: 22px;font-weight: 300"/><br/>
+		                <span style="font-family: Helvetica;font-size: 16px;font-weight: 300"><span t-esc="company.street"/> <span t-esc="company.city"/> (<span t-esc="company.state_id.name"/>) </span><br/>
+		                <span style="font-family: Helvetica;font-size: 14px;font-weight: 300">Nit: <span t-esc="company.company_registry"/></span>
+		            </div>
+		        </div>
+		    </div>
+		</xpath>
+
+	</template>
+
+	<!-- TAMAÑO DE PAPEL -->
+    <record id="paperformat_medical_carta" model="report.paperformat">
+        <field name="name">Medical Carta Vertical</field>
+        <field name="default" eval="True" />
+        <field name="format">Letter</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">25</field>
+        <field name="margin_bottom">10</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">25</field>
+        <field name="dpi">90</field>
+    </record>
+
+</data>
+</openerp>

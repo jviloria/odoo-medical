@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.actions.act_window" id="medical_eapb_order_action">
+            <field name="name">EAPB Order</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">medical.eapb.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="medical_eapb_order_view_tree" model="ir.ui.view">
+             <field name="name">medical.eapb.order.tree</field>
+             <field name="model">medical.eapb.order</field>
+             <field name="arch" type="xml">
+        				<tree string="Medical EAPB Order">
+                  <field name="code"/>
+                  <field name="eapb_id"/>
+        					<field name="patient_name"/>
+        				</tree>
+             </field>
+        </record>
+
+        <record id="medical_eapb_order_view_form" model="ir.ui.view">
+             <field name="name">medical.eapb.order.form</field>
+             <field name="model">medical.eapb.order</field>
+             <field name="arch" type="xml">
+              <form string="Medical EAPB Order">
+                    <header>
+                    </header>
+                    <sheet>
+                    	<group>
+                          <field name="code"/>
+                          <field name="eapb_id"/>
+                      		<field name="patient_name" readonly="1"/>
+                          <field name="evaluation_id" readonly="1"/>
+                          <field name="evaluation_date" readonly="1"/>
+                    	</group>
+                    </sheet>
+               </form>
+             </field>
+        </record>
+
+        <record model="ir.actions.act_window.view" id="medical_eapb_order_action_form">
+            <field name="act_window_id" ref="medical_eapb_order_action" />
+            <field name="sequence" eval="40" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="medical_eapb_order_view_form" />
+        </record>
+
+        <record model="ir.actions.act_window.view" id="medical_eapb_order_action_tree">
+            <field name="act_window_id" ref="medical_eapb_order_action" />
+            <field name="sequence" eval="30" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="medical_eapb_order_view_tree" />
+        </record>
+
+        <menuitem id="medical_eapb_order_menu"
+                  name="Medical EAPB Order"
+                  parent="medical.medical_patient_root"
+                  sequence="10"
+                  action="medical_eapb_order_action" />
+
+    </data>
+</openerp>

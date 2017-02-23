@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+
+    <data noupdate="1">
+
+    <!-- Cron -->
+
+        <record model="ir.cron" id="ir_cron_medical_physician_schedule_every_hour">
+            <field name="name">Medical Appointment: Deactivate Overdue Schedule</field>
+            <field name="interval_number">2</field>
+            <field name="interval_type">hours</field>
+            <field name="numbercall">-1</field>
+            <field name="doall" eval="False"/>
+            <field name="model" eval="'medical.physician.schedule.template'"/>
+            <field name="function" eval="'_deactivate_overdue'"/>
+            <field name="args" eval="'()'"/>
+        </record>
+    </data>
+</openerp>

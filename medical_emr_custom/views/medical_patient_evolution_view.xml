@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+		<record id="medical_patient_view_evolution_tree" model="ir.ui.view">
+			<field name="name">medical.patient.evolution.tree</field>
+			<field name="model">medical.patient.evolution</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<tree string="Medical Patient Evaluation">
+					<field name="date" />
+					<!--field name="name" /-->
+					<field name="patient_id" />
+					<field name="doctor_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="medical_patient_view_evolution_form" model="ir.ui.view">
+			<field name="name">medical.patient.evolution.form</field>
+			<field name="model">medical.patient.evolution</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<form string="Medical Patient Evaluation">
+                    <sheet>
+                        <!--div>
+                            <h1>
+                                <label string="Patient"/>
+                                <field name="patient_id" readonly="1"/>
+                             </h1>
+                        </div-->
+                        <div>
+                        	<group>
+                            <field name="evaluation_id" options="{'no_quick_create': True, 'no_create_edit': True}" attrs="{'readonly':[('is_created','=',True)]}" on_change="onchange_evaluation_id(evaluation_id)"/>
+                            <field name="patient_id"/>
+                            <field name="doctor_id" />
+                            <field name="evolution_text" attrs="{'readonly':[('is_created','=',True)]}"/>
+                            <field name="is_created" invisible="1"/>
+        					</group>
+                        </div>
+     				</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="medical_patient_evolution_action">
+			<field name="name">Patient Evolution</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">medical.patient.evolution</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="search_view_id" ref="medical_patient_view_evaluation_search" /-->
+			<field name="domain">[]</field>
+			<field name="context">{}</field>
+		</record>
+
+		<record model="ir.actions.act_window.view" id="medical_patient_evolution_action_form">
+			<field name="act_window_id" ref="medical_patient_evolution_action" />
+			<field name="sequence" eval="20" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="medical_patient_view_evolution_form" />
+		</record>
+
+		<record model="ir.actions.act_window.view" id="medical_patient_evolution_action_tree">
+			<field name="act_window_id" ref="medical_patient_evolution_action" />
+			<field name="sequence" eval="10" />
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="medical_patient_view_evolution_tree" />
+		</record>
+
+</data>
+</openerp>
