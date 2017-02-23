@@ -15,7 +15,7 @@ Medical Module Modification
     'version': '8.0.1.1.0',
     'category': 'Medical',
     'depends': [
-        'medical','base','medical_disease','jmedical_emr',
+        'medical','base','medical_disease','medical_emr_custom',
     ],
     'author': 'John Winston Viloria Amaris',
     'license': 'AGPL-3',
